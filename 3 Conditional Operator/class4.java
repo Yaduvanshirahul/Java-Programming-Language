@@ -1,0 +1,24 @@
+//ELSE IF CONDITION
+
+import java.util.Scanner;
+public class class4 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+       if(a>=18){
+
+        System.out.println("he is adult now");
+       }
+       else if(a>=13 && a<=17){
+
+        System.out.println("he is teenager");
+       }
+       else{
+
+        System.out.println("he is minor");
+       }
+       sc.close();
+    }
+}
