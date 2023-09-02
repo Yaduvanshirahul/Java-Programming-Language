@@ -14,22 +14,31 @@ public class class11 {
             if(number[mid]==key){
                 return mid;
             }
-            if(number[mid]<key){
+            else if(number[mid]<key){
                 start = mid+1;
             }
             else
             {
                 end = mid-1;
             }
+            
         }
-    }
         return -1;
-}
-public static int main(String[] args) {
+    }
+        
+
+public static void main(String[] args) {
     
     int number[ ]= {3,5,6,7,8,9};
     int key = 7;
      
-
-    System.out.println("element found at place "+ BinarySearch(number , key););
+    int result = BinarySearch(number , key);
+    if(result!=-1){
+        System.out.println("element is found at position "+ result);
+    }
+    else{
+         System.out.println("element is not present in array " );
+    }  
 }
+}
+
