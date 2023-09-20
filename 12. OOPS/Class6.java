@@ -3,7 +3,7 @@
 public class Class6 {
     public static void main(String[] args) {
 
-        Student1 s0 = new Student1();
+        Student1 s = new Student1();
         Student1 s1 = new Student1("rahul");
         Student1 s2 = new Student1(4);
 
@@ -12,6 +12,7 @@ public class Class6 {
 
         System.out.println(s1.name);
         System.out.println(s2.age);
+
     }
 }
 
@@ -19,6 +20,7 @@ class Student1 {
 
     String name;
     int age;
+    String password;
 
     Student1() {
         System.out.println("constructor is called");
